@@ -1,3 +1,10 @@
+# Ovo je komentar
+
+ -- putanju  C:\Users\Katedra\D... prilagoditi svojoj datoteci na disku
+# c:\xampp\mysql\bin\mysql -uroot --default_character_set=utf8 < C:\Users\Vjeran\Documents\GitHub\Vjeran-JP28\frizerski.sql
+
+-- I ovo je komentar
+
 drop database if exists salon;
 create database salon;
 use salon;
@@ -35,5 +42,10 @@ references usluga(sifra);
 
 alter table djelatnik add foreign key (usluga)
 references usluga(sifra);
+
+insert into osoba (sifra,ime,prezime,telefon)values
+(null,'Vjeran','Šergo',031351157),
+(null,'Marko','Marković',031351358),
+(null,'Hrvoje','Horvat',0915357832);
 
 
