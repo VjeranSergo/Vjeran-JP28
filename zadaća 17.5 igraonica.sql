@@ -74,6 +74,25 @@ references posjeta(sifra);
 alter table uslugaposjeta add foreign key (usluga)
 references usluga(sifra);
 
+insert into djelatnik (sifra,iban,ime,oib,prezime,radnoMjesto) values
+(null,null,'Marko',NULL,'Marković','prodavač'),
+(null,null,'Tihomir',NULL,'Glasnić','prodavač'),
+(null,null,'Tvrtko',NULL,'Softić','prodavač');
+
+insert into dijete (sifra,ime,imeroditelja,prezime,telefonroditelja) values
+(null,'Lovro','Tin','Lovrić',031556578),
+(null,'Marko','Tin','Lovrić',031556578),
+(null,'Robert','Ivica','Činčak',032556578),
+(null,'Nikola','Nikola','Ivković',033556578),
+(null,'Ivana','Sanja','Perić',038555578),
+(null,'Martina','Ivona','Skoko',031556598);
+
+insert into usluga (sifra,cijena,jedinicamjere,kolicina,naziv) values
+(null,10,'satigranja',1,'Marković','trampolin'),
+(null,15,'satigranja',1,'Glasnić','arkada'),
+(null,20,'satigranja',1,'Softić','playstation');
+
+
 
 
 
