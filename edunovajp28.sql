@@ -2,7 +2,7 @@
 # Ovo je komentar
 
  -- putanju  C:\Users\Katedra\D... prilagoditi svojoj datoteci na disku
-# c:\xampp\mysql\bin\mysql -uroot --default_character_set=utf8 < C:\Users\Katedra\Documents\GitHub\EdunovaJP28\edunovajp28.sql
+# c:\xampp\mysql\bin\mysql -uroot --default_character_set=utf8 < C:\Users\Vjeran\Documents\GitHub\Vjeran-JP28\edunovajp28.sql
 
 -- I ovo je komentar
 
@@ -152,3 +152,46 @@ insert into clan (grupa,polaznik) values
 
 -- Domaća zadaća:
 -- U sve baze koje ste kreirali na osnovu zadatka ERA osnovno unijeti u svaku tablicu po 3 - 5 redova
+
+-- PROMJENA PODATAKA
+
+--select * from smjer;
+
+-- ne izvoditi update bez where dijela update naredbe
+
+-- select * from smjer;
+
+update smjer set naziv='Java programiranje'
+where sifra=1;
+
+-- web programiranje cijena je 1000 eur i upisnina 50 eur
+update smjer set 
+cijena=1000,
+upisnina=50
+where sifra=2;
+
+-- svim smjerovima smanji cijenu za 10%
+update smjer set cijena=cijena*0.9;
+
+-- uvećaj cijenu svim smjerovima za 10 eur
+update smjer set cijena=cijena+10;
+
+-- select * from osoba;
+-- Kristi se odluči rastati želi 
+-- vratiti svoje prezime Novoselić
+-- PROVEDITE TO
+
+-- vanjski ključ 55 ne postoji kao primarni ključ 55 u tablici smjer
+-- update grupa set smjer=55 where sifra=1;
+
+
+-- BRISANJE PODATAKA
+
+-- DELETE naredbe su zakomentirane da nam ne pobrišu podatke
+-- delete from clan where grupa=1;
+-- delete from grupa where smjer=1;
+-- delete from smjer where sifra=1;
+
+
+-- Domaća zadaća: Za ponedjeljak (22. 05.) na svoj github postaviti 
+-- prvu verziju ER dijagrama završnog rada kao sliku s papira. 
